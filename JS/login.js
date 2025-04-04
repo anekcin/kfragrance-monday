@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
         if (user) {
             // Store current user's first name in localStorage for the welcome page
             localStorage.setItem("currentUser", JSON.stringify(user));
-            window.location.href = "../public/product.html";
+            window.location.href = "product.html";
           } else {
             alert("Invalid TRN or password. Please try again.");
           }
