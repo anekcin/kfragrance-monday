@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Cart</title>
+  <link rel="stylesheet" href="../style.css">
+  <link rel="icon" type="image/x-icon" href="../assets/favicon.ico">
+
+  <style>
+    table{
+        border-radius: 30px;
+        border-spacing: 50px;
+        background-color: white;
+    }
+
+    th{
+        color: #820300;
+    }
+  </style>
+</head>
+<body>
+  <!--Navigation bar-->
+  <div class="topnav">
+    <img class="logo" src="../assets/Logo.png">
+    <a href="./dashboard.html">Dashboard</a>
+    <a href="./cart.html">Cart</a>
+    <a href="./product.html">Products</a>
+    <a href="./about.html">About</a>
+  </div>
+
+  <h1 class="center">Shopping Cart</h1>
+
+  <div class="cart-container">
+    <table id="cart-table" class="center">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Price</th>
+          <th>Quantity</th>
+          <th>Sub-total</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Cart items will be inserted here -->
+      </tbody>
+    </table>
+    <div class="cart-summary center" style="color: #FF9800;">
+      <p>Sub-total: $<span id="subtotal">0.00</span></p>
+      <p>Discount (10%): $<span id="discount">0.00</span></p>
+      <p>Tax (6%): $<span id="tax">0.00</span></p>
+      <h3>Grand Total: $<span id="grand-total">0.00</span></h3>
+    </div>
+  </div>
+
+  <div class="button-container">
+    <button id="clear-all" class="button">Clear All</button>
+    <button id="checkout" class="button">Check Out</button>
+    <button id="close-cart" class="button">Close</button>
+  </div>
+
+  <script src="../JS/cart.js"></script>
+</body>
+</html>

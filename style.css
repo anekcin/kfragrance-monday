@@ -1,0 +1,202 @@
+@font-face {
+  font-family: Mistrully;
+  src: url(./font/Mistrully-Ojmd.otf);
+ 
+}
+
+body{
+    background-color: #820300;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+/* Styling for video inserted on Welcome Page*/
+.video-container {
+  width: 100%;
+  max-width: 800px; 
+  margin: 0 auto; 
+  display: flex;
+}
+
+.video-container video {
+  width: 100%;
+  height: auto; 
+  border-radius: 10px;
+}
+
+/*____________________________ */
+.center{
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1{
+  font-size: 45px;
+  color: #FF9800;
+}
+
+h2{
+  color: #FF9800;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  left: 10px;
+}
+
+.brand{
+  font-family: Mistrully;
+  font-size: 80px;
+  text-align: center;
+}
+
+.button{
+  width: 100px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: #FF9800;
+  border: 0px;
+  margin-top: 20px;
+}
+
+.container{
+  text-align: center;
+  background-color: #FBFFE4;
+  padding: 40px;
+  width: 55%;
+  border-radius: 20px;
+  margin: auto;
+}
+
+
+/* Styling for product page */
+.product-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.product-card {
+  width: 250px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.product-img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.product-name {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.product-price {
+  font-size: 16px;
+  color: #555;
+}
+
+.add-to-cart {
+  background-color: #FF9800;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.button-container button {
+  width: 120px;
+  padding: 10px;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.checkout {
+  background-color: green;
+  color: white;
+}
+
+.cancel {
+  background-color: red;
+  color: white;
+}
+
+.exit {
+  background-color: gray;
+  color: white;
+}
+
+
+/* styling for login form */
+
+input[type=text],[type=password],[type=date],[type=tel], [type=email]{
+  width: 40%;
+  padding: 12px 20px;
+  margin: 8px 0;
+}
+
+form{
+  text-align: center;
+  display: inline-block;
+  background-color: #FBFFE4;
+  width: 50%;
+  height: fit-content;
+  border-radius: 20px;
+  padding: 40px;
+  margin-left: 25%;
+  margin-right:25%;
+  width: 50%;
+  
+}
+
+/* navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: black;
+  position: sticky;
+  top: 0;
+  border-radius: 10px;
+}
+
+.topnav a {
+  float:right;
+  color: #FF9800;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #F7F7F7;
+  color: black;
+}
+
+/* styling for contact section */
+#contact{
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+

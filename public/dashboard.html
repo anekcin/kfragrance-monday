@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="../style.css">
+  <link rel="icon" type="image/x-icon" href="../assets/favicon.ico">
+</head>
+<body>
+  <div class="topnav">
+    <img class="logo" src="../assets/Logo.png">
+    <a href="./dashboard.html">Dashboard</a>
+    <a href="./cart.html">Cart</a>
+    <a href="./product.html">Products</a>
+    <a href="./about.html">About</a>
+  </div>
+
+  <h1 class="center">Dashboard</h1>
+
+  <!-- Frequency Charts Section -->
+  <div id="dashboard" class="container">
+    <div id="genderChart"></div>
+    <br/>
+    <div id="ageChart"></div>
+  </div>
+
+  <br/>
+
+  <!-- Invoice Section -->
+  <div id="invoiceSection" class="container">
+    <h3>Invoices</h3>
+    <!-- Button to display all invoices in console -->
+    <button id="showInvoicesButton" class="button">Show All Invoices</button>
+    <br/><br/>
+    <!-- Search bar to get invoices for a specific user by TRN -->
+    <input type="text" id="searchTRN" placeholder="Enter TRN to search for invoices">
+    <button id="searchUserInvoices" class="button">Search User Invoices</button>
+    <div id="userInvoicesDisplay"></div>
+  </div>
+
+  <script src="../JS/dashboard.js"></script>
+</body>
+</html>

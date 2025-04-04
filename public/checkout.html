@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout</title>
+  <link rel="stylesheet" href="../style.css">
+  <link rel="icon" type="image/x-icon" href="../assets/favicon.ico">
+</head>
+<body>
+  <!--Navigation bar-->
+  <div class="topnav">
+    <img class="logo" src="../assets/Logo.png">
+    <a href="./dashboard.html">Dashboard</a>
+    <a href="./cart.html">Cart</a>
+    <a href="./product.html">Products</a>
+    <a href="./about.html">About</a>
+  </div>
+
+  <h1 class="center">Checkout</h1>
+
+  <div class="checkout-container">
+    <div class="cart-summary container">
+      <h2>Cart Summary</h2>
+      <div id="checkout-summary">
+        <!-- Cart summary will be dynamically generated here -->
+      </div>
+    </div>
+    <br/><br/>
+
+    <div class="shipping-details">
+      <form id="shippingForm">
+        <h2 >Shipping Details</h2><br/><br/>
+        <label for="shipName">Name</label><br/>
+        <input type="text" id="shipName" placeholder="Your name" required><br/><br/>
+
+        <label for="address">Address</label><br/>
+        <input type="text" id="address" placeholder="Your address" required><br/><br/>
+
+        <label for="shipPhone">Phone Number</label><br/>
+        <input type="tel" id="shipPhone" placeholder="Your phone number" required><br/><br/>
+
+        <div class="button-container">
+          <button type="submit" id="confirm" class="button">Confirm</button>
+          <button type="button" id="cancel" class="button">Back to Cart</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="../JS/checkout.js"></script>
+</body>
+</html>
